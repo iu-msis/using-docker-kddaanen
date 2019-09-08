@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <title>Table Page</title>
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
+</head>
+<body>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Table.html">Table<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="row">
+  <table id="taskTable" class="table" margin-top="10px" id="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author(s)</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Page Count</th>
+        <th scope="col">MSRP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Astrology: The 12 Zodiac Signs</td>
+        <td>Luna Sidana</td>
+        <td>2003</td>
+        <td>CreateSpace</td>
+        <td>265</td>
+        <td>$7.99</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>How to Get Away with Murder: Evil Masterminds Who Evaded Capture</td>
+        <td>Roger Harrington</td>
+        <td>1962</td>
+        <td>William Heinemann</td>
+        <td>192</td>
+        <td>$6.99</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Helter Skelter</td>
+        <td>Curt Gentry and Vincent Bugliosi</td>
+        <td>1986</td>
+        <td>W. W. Norton & Company</td>
+        <td>502</td>
+        <td>$11.99</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Zodiac</td>
+        <td>Robert Graysmith</td>
+        <td>1986</td>
+        <td>St. Martin's Press</td>
+        <td>364</td>
+        <td>$9.99</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <div class="row frmstyl">
+    <h1 class="col-12">Add Book</h1>
+
+    <div class="col-12">
+      <form action="#" method="get">
+
+          <label for="title">Title:</label> <input type="text" name="titel" id="title"><br>
+
+          <label for="author">Author(s): </label> <input type="text" name="author"><br>
+
+          <label for="yearPublished">Year Published: </label> <input type="year" name="yearPublished"><br>
+
+          <label for="Publisher">Publisher: </label> <input type="text" name="publisher"><br>
+
+          <label for="pageCount">Page Count: </label> <input type="number" name="pageCount"><br>
+
+          <br><br>
+          <input type="submit" name="submit" id="submit" value="Save Book" class="button">
+
+      </form>
+    </div>
+  </div>
+</div>
+  <script src="js/tablesort.min.js"></script>
+  <script>
+  new Tablesort(document.getElementById('taskTable'));
+</script>
+</body>
+</html>

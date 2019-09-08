@@ -1,0 +1,83 @@
+.text {
+  font-size: 24;
+  text-align:center;
+  font-family: "arial";
+}
+
+#background {
+  background-color: blue;
+}
+
+/* ul {
+  font-weight: bold;
+  color: purple;
+} */
+
+
+.frmstyl {
+  text-align: center;
+}
+
+.img {
+  align-self: center;
+  border: 10px;
+  border-color: lavenderblush;
+  margin-top: 15px;
+}
+
+nav{
+  color: purple;
+  header-color: gray;
+}
+
+.table{
+  thead-color: black;
+  color: gray;
+  background-color: lavenderblush;
+margin-top: 15px;
+}
+
+form {
+  background-color: lavenderblush;
+  border-color: black;
+  family: serif;
+  border:3px solid mediumpurple;
+  padding: 15px;
+}
+
+#Renly {
+  transform: rotate(90deg);
+}
+
+.wlcmsg {
+  margin-bottom: 100px;
+}
+
+#piclink {
+  text-align: center;
+  color:darkgrey;
+  style="color:red"
+}
+
+h1
+{
+  text-align: center;
+  color: grey;
+}
+
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  height: 500px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#pich{
+  width="800"; 
+  height="150";
+}
