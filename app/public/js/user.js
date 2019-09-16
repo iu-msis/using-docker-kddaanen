@@ -1,4 +1,4 @@
-var randomuser = new Vue ({
+var randomuser = new Vue({
   el: '#userinfo',
   data: {
     users: {
@@ -14,7 +14,7 @@ methods: {
   fetchUser() {
     fetch('https://randomuser.me/api/')
     .then(response => response.json())
-    .then(json => {randomuser.users = json.results[0]});
+    .then(json => {randomuser.users = json.results[0];})
   }
 },
 created(){
