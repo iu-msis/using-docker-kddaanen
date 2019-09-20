@@ -78,6 +78,11 @@ img:hover {
 }
 
 #pich{
-  width="800"; 
+  width="800";
   height="150";
+}
+
+#fm {
+  background-color: white;
+  border-color: white;
 }

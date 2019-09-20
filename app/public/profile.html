@@ -26,8 +26,9 @@
     </ul>
   </div
 </nav>
-
-<div id='userinfo'>
+<br>
+<div id='userinfo' class="mainbody">
+<div>
   <span><img :src="users.picture.large" alt="profile picture"></span><br>
     <link :href="users.picture.large"> <small> <i> Source: Randomuser.me </i> </small>
     <br></br>
@@ -36,8 +37,11 @@
   <strong>Birthdate: {{users.dob.date}}</strong> <span> </span> <br>
   <strong>Age: {{users.dob.age}} </strong> <span> </span> <br>
   <strong>Email: <a :href="'mailto:'+ users.email">{{users.email}} </a></strong> <span> </span> <br>
+  <form id="fm" @submit.prevent="fetchUser">
+    <button type="submit">Create New Profile</button>
+  </form>
 </div>
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/user.js"></script>
 
